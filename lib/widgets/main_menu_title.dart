@@ -9,7 +9,7 @@ class TicTacToeTitle extends StatelessWidget {
     return const Column(
       children: [
         Text(
-          'TIC',
+          'NOUGHTS',
           style: TextStyle(
               fontWeight: FontWeight.w900,
               color: titleColor,
@@ -20,7 +20,7 @@ class TicTacToeTitle extends StatelessWidget {
         //   height: 2,
         // ),
         Text(
-          'TAC',
+          'AND',
           style: TextStyle(
               fontWeight: FontWeight.w900,
               color: titleColor,
@@ -31,7 +31,7 @@ class TicTacToeTitle extends StatelessWidget {
         //   height: 2,
         // ),
         Text(
-          'TOE',
+          'CROSSES',
           style: TextStyle(
               fontWeight: FontWeight.w900,
               color: titleColor,

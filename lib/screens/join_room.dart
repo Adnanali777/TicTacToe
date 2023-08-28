@@ -38,16 +38,11 @@ class _JoinRoomScreenState extends State<JoinRoomScreen> {
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const CustomText(
-                shadows: [
-                  Shadow(
-                    blurRadius: 40,
-                    color: Colors.blue,
-                  ),
-                ],
-                text: 'Join \nRoom',
+                shadows: [],
+                text: ' Join\nRoom',
                 fontSize: 70,
               ),
               SizedBox(height: size.height * 0.045),
@@ -61,7 +56,11 @@ class _JoinRoomScreenState extends State<JoinRoomScreen> {
                 hintText: 'Enter Game ID',
               ),
               SizedBox(height: size.height * 0.045),
-              CustomButton(onTap: () => _socketMethods.joinRoom(_nameController.text.trim(), _gameIdController.text.trim()), text: 'Join'),
+              CustomButton(
+                  onTap: () => _socketMethods.joinRoom(
+                      _nameController.text.trim(),
+                      _gameIdController.text.trim()),
+                  text: 'Join'),
             ],
           ),
         ),

@@ -34,11 +34,18 @@ class _WaitingLobbyState extends State<WaitingLobby> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const Text('Waiting for a player to join...'),
+        const SizedBox(
+          height: 10,
+        ),
+        const Text('Share this code with other player to join the game'),
         const SizedBox(height: 20),
-        CustomTextField(
-          controller: roomIdController,
-          hintText: '',
-          isReadOnly: true,
+        Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: CustomTextField(
+            controller: roomIdController,
+            hintText: '',
+            isReadOnly: true,
+          ),
         ),
       ],
     );

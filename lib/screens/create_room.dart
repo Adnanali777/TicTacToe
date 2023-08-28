@@ -15,13 +15,11 @@ class CreateRoomScreen extends StatefulWidget {
 }
 
 class _CreateRoomScreenState extends State<CreateRoomScreen> {
-
   final TextEditingController _nameController = TextEditingController();
   final _socketMethods = SocketMethods();
 
   @override
   void initState() {
-    
     super.initState();
     _socketMethods.createRoomSuccessListener(context);
   }
@@ -29,10 +27,9 @@ class _CreateRoomScreenState extends State<CreateRoomScreen> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    
 
     return Scaffold(
-      body: Responsive( 
+      body: Responsive(
         child: Container(
           margin: const EdgeInsets.symmetric(
             horizontal: 20,
@@ -42,16 +39,11 @@ class _CreateRoomScreenState extends State<CreateRoomScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const CustomText(
-                shadows: [
-                  Shadow(
-                    blurRadius: 40,
-                    color: Colors.blue,
-                  ),
-                ],
-                text: 'Create Room',
+                shadows: [],
+                text: 'Create\n Room',
                 fontSize: 70,
               ),
-              SizedBox(height: size.height * 0.08),
+              SizedBox(height: size.height * 0.045),
               CustomTextField(
                 controller: _nameController,
                 hintText: 'Enter your nickname',

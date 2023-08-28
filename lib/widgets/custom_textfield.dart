@@ -16,22 +16,22 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-        boxShadow: [
-          BoxShadow(
-            color: Colors.blue,
-            blurRadius: 5,
-            spreadRadius: 2,
-          )
-        ],
-      ),
+          // boxShadow: [
+          //   BoxShadow(
+          //     color: Colors.blue,
+          //     blurRadius: 5,
+          //     spreadRadius: 2,
+          //   )
+          // ],
+          ),
       child: TextField(
         readOnly: isReadOnly,
         controller: controller,
         decoration: InputDecoration(
-          fillColor: bgColor,
-          filled: true,
-          hintText: hintText,
-        ),
+            fillColor: gridCellColor,
+            filled: true,
+            hintText: hintText,
+            border: InputBorder.none),
       ),
     );
   }
