@@ -1,0 +1,5 @@
+make an event/socket to detect if a player leaves the game
+local game, create game, join game
+local game => both users are available on the same device
+
+clear board socket event
