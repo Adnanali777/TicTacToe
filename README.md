@@ -21,3 +21,12 @@ Welcome to the Tic Tac Toe Game! This is a classic two-player game where players
 
 - Flutter for the game interface.
 - [Socket.io](https://socket.io/) for enabling real-time multiplayer mode.
+
+## Screenshots
+
+![Main Menu](https://github.com/Adnanali777/TicTacToe/blob/main/mockups/Samsung%20Galaxy%20S20%205G.png?raw=true)
+![Waiting Lobby](https://github.com/Adnanali777/TicTacToe/blob/main/mockups/Samsung%20waiting%20lobby.png)
+![Join Room](https://github.com/Adnanali777/TicTacToe/blob/main/mockups/Samsung%20join%20room.png)
+![Game Screen](https://github.com/Adnanali777/TicTacToe/blob/main/mockups/SamsungGameScreen.png)
+
+
