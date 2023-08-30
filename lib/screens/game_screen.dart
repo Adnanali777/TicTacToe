@@ -35,11 +35,11 @@ class _GameScreenState extends State<GameScreen> {
                 child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 60,
                   ),
-                  Scoreboard(),
-                  TicTacToeBoard(),
+                  Scoreboard(isLocal: false,),
+                  const TicTacToeBoard(),
                   Text('${roomInfo['turn']['nickname']}\'s turn')
                 ],
               )));

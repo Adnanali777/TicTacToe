@@ -10,8 +10,8 @@ void showSnackBar(BuildContext context, String content) {
   );
 }
 
-void showGameDialog(BuildContext context, String text) {
-  showDialog(
+showGameDialog(BuildContext context, String text) async{
+  await showDialog(
       barrierDismissible: false,
       context: context,
       
@@ -24,7 +24,7 @@ void showGameDialog(BuildContext context, String text) {
             TextButton(
               onPressed: () {
                 GameMethods().clearBoard(context);
-                Navigator.pop(context);
+                Navigator.of(context).pop(true);
               },
               child: const Text(
                 'Play Again',

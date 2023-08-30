@@ -86,7 +86,7 @@ class SocketMethods {
           .updateRoomData(data['room']);
 
       //checking winner
-      GameMethods().checkWinner(context, _socketclient);
+      GameMethods().checkWinner(context:context, socketClent: _socketclient);
     });
   }
 

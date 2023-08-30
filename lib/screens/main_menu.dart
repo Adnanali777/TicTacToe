@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:tictactoe/responsive/responsive.dart';
 import 'package:tictactoe/screens/create_room.dart';
 import 'package:tictactoe/screens/join_room.dart';
+import 'package:tictactoe/screens/local_game_screen.dart';
+import 'package:tictactoe/utilities/colors.dart';
 import 'package:tictactoe/widgets/custom_button.dart';
 import 'package:tictactoe/widgets/main_menu_title.dart';
 
@@ -17,6 +19,10 @@ class MainMenuScreen extends StatelessWidget {
     Navigator.pushNamed(context, JoinRoomScreen.routeName);
   }
 
+  void goToLocalGame(BuildContext context) {
+    Navigator.pushNamed(context, LocalGame.routeName);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,6 +33,14 @@ class MainMenuScreen extends StatelessWidget {
             TicTacToeTitle(),
             const SizedBox(
               height: 50,
+            ),
+            CustomButton(
+              onTap: () => goToLocalGame(context),
+              text: 'Local Game',
+              gradientColors: [localGameclr, Colors.blue],
+            ),
+            const SizedBox(
+              height: 20,
             ),
             CustomButton(
               onTap: () => createRoom(context),
